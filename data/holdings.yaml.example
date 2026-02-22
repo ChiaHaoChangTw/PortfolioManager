@@ -1,0 +1,79 @@
+# Portfolio Holdings
+# Copy this file to holdings.yaml and fill in your real values.
+# holdings.yaml is gitignored: never commit real balances.
+#
+# Last updated: YYYY-MM-DD
+
+metadata:
+  currency: USD
+  last_updated: "2026-02-21"
+
+accounts:
+
+  # ── US Cash ──────────────────────────────────────────────────────────────
+  bofa_checking:
+    type: checking
+    institution: Bank of America
+    balance: 0.00
+
+  bofa_savings:
+    type: savings
+    institution: Bank of America
+    balance: 0.00
+
+  chase_checking:
+    type: checking
+    institution: Chase
+    balance: 0.00
+
+  chase_savings:
+    type: savings
+    institution: Chase
+    balance: 0.00
+
+  # ── High-Yield Savings ────────────────────────────────────────────────────
+  amex_hysa:
+    type: hysa
+    institution: American Express
+    apy: 4.00          # Update with current rate
+    balance: 0.00
+
+  # ── Fidelity: 401K ───────────────────────────────────────────────────────
+  fidelity_401k:
+    type: 401k
+    institution: Fidelity
+    holdings:
+      FXAIX:           # Fidelity S&P 500 Index Fund
+        shares: 0.000
+        avg_cost: 0.00
+      # Add more funds as needed
+
+  # ── Fidelity: HSA ────────────────────────────────────────────────────────
+  fidelity_hsa:
+    type: hsa
+    institution: Fidelity
+    cash_balance: 0.00
+    holdings: {}       # Add invested funds here if applicable
+
+  # ── Fidelity: Brokerage ──────────────────────────────────────────────────
+  fidelity_brokerage:
+    type: brokerage
+    institution: Fidelity
+    holdings:
+      VTI:             # Vanguard Total Stock Market ETF (example)
+        shares: 0.000
+        avg_cost: 0.00
+      # Add more positions as needed
+
+  # ── Crypto: Coinbase ─────────────────────────────────────────────────────
+  coinbase:
+    type: crypto
+    institution: Coinbase
+    holdings:
+      BTC:
+        units: 0.00000000
+        avg_cost: 0.00
+      ETH:
+        units: 0.00000000
+        avg_cost: 0.00
+      # Add more coins as needed

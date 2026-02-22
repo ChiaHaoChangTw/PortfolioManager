@@ -1,0 +1,23 @@
+# Environment: contains API keys, never commit
+.env
+
+# Real holdings data: use holdings.yaml.example as template
+data/holdings.yaml
+data/transactions/
+
+# Reports may contain sensitive financial data
+reports/
+!reports/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+dist/
+
+# uv
+uv.lock
+
+# macOS
+.DS_Store

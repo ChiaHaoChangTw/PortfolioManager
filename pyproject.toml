@@ -1,0 +1,12 @@
+[project]
+name = "portfolio-manager"
+version = "0.1.0"
+description = "Personal finance portfolio manager with AI agents"
+requires-python = ">=3.11"
+dependencies = [
+    "anthropic>=0.40.0",   # Anthropic SDK
+    "pyyaml>=6.0",         # Read/write YAML files
+    "rich>=13.0",          # Pretty terminal output
+    "python-dotenv>=1.0",  # Load .env file so ANTHROPIC_API_KEY is available
+]
+
